@@ -355,56 +355,94 @@
 
 
   <!-- Team Section -->
+  <style>
+    #team {
+      background-color: #000;
+      /* color: #fff; */
+      padding: 50px 0;
+      background: unset;
+    }
+  
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .team-card {
+      /* width: 200px; */
+      background:linear-gradient(to bottom, #d0a149, #829271);
+      border-radius: 50px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+       }
+  
+    .team-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transform: unset;
+    }
+  
+    .team-card h3 {
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+  
+    .team-card p {
+      font-size: 14px;
+      color: #666;
+      margin: 5px 0 0;
+    }
+    .section-title h2{
+      color: #d0a149 !important;
+    }
+    .section-title p{
+      color: #000 !important;
+    }
+      </style>
+  
   <div id="team" class="text-center">
-    <div class="overlay">
-      <div class="container">
+    <div class="container">
+      
 
-        <div class="section-title text-center center">
-          <h2 style="color: #000;">Our Team</h2>
-          <hr style="color: #d0a149;">
-          <p style="color: #666;">Designing Dreams, Building Together</p>
+   
+      <div class="section-title text-center">
+        <h2 >Our Team</h2>
+        <hr style="border-color: #d0a149;">
+        <p >Designing Dreams, Building Together</p>
+      </div>
+  
+      <div class="row team-container">
+        <div class="col-md-2 team-card">
+          <img src="img/team/team-8.png" alt="Mahesh">
+          <h3>Mahesh</h3>
+          <p>Director</p>
         </div>
-        <div id="row">
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail"> <img src="img/render-1/WhatsApp_Image_2025-01-06_at_6.31.59_PM-removebg-preview.png" alt="..." class="team-img">
-              <div class="caption">
-                <h3 style="color: #000;">Mahesh</h3>
-                <p style="color: #666;">Director</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail"> <img src="img/render-1/harshitha.png" alt="..." class="img-circle team-img">
-              <div class="caption">
-                <h3 style="color: #000;">Harshitha</h3>
-                <p style="color: #666;">Interior Designer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"> <img
-                src="img/team/03.jpg" alt="..." class="img-circle team-img">
-              <div class="caption">
-                <h3 style="color: #000;">Jane Doe</h3>
-                <p style="color: #666;">Senior Designer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300"> <img
-                src="img/team/04.jpg" alt="..." class="img-circle team-img">
-              <div class="caption">
-                <h3 style="color: #000;">Karen Doe</h3>
-                <p style="color: #666;">Project Manager</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-2 team-card">
+          <img src="img/team/team-7.png" alt="Harshitha">
+          <h3>Harshitha</h3>
+          <p>Interior Designer</p>
+        </div>
+        <div class="col-md-2 team-card">
+          <img src="img/team/03.jpg" alt="Jane Doe">
+          <h3>Jane Doe</h3>
+          <p>Senior Designer</p>
+        </div>
+        <div class="col-md-2 team-card">
+          <img src="img/team/04.jpg" alt="Karen Doe">
+          <h3>Karen Doe</h3>
+          <p>Project Manager</p>
         </div>
       </div>
     </div>
-  </div>
-
-
+    </div>
+  
+  
 
   <!--partners-->
   <div class="pt-3">
