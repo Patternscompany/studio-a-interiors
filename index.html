@@ -1282,6 +1282,22 @@ margin-top: 1rem;
 
 
     <style>
+       .testi-carousel.owl-carousel .owl-dots{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+  }
+  .testi-carousel.owl-carousel .owl-dots .owl-dot{
+    margin: 0 5px;
+    width: 10px;
+    height:15px;
+    background-color: white;
+  }
+  .testi-carousel.owl-carousel .owl-dots .owl-dot.active{
+    background-color: #d0a149;
+
+  }
   .testi-img{
     /* width: 100px; */
     /* height: 100px; */
@@ -1622,12 +1638,27 @@ background-color: #e6b52e;
     border-radius: 50px;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
      }
-
-  .team-card img {
+     .team-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
     width: 100%;
+    height: 100%;
+    border: 30px solid #829271;
+    border-radius: 50px;
+    z-index: 4;
+  }
+  .team-card img {
+    width: 100px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 15px;
@@ -2342,10 +2373,10 @@ $(".testi-carousel").owlCarousel({
   autoplay: true,
   smartSpeed: 2000,
   center: false,
-  dots: false,
+  dots: true,
   loop: true,
   margin: 25,
-  nav : true,
+  nav : false,
   navText : [
       '<i class="fa fa-angle-right"></i>',
       '<i class="fa fa-angle-left"></i>'
