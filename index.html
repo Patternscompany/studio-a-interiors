@@ -463,42 +463,49 @@
 
 <div class="workflow text-center" style="background-color: #FAF7F0;">
   <div class="steps">
-    <div class="step">
+    <div class="container">
+
+   <div class="row">
+
+  
+    <div class="step col-md-4">
       <div class="icon-container">
         <img src="img/render-1/2621711-removebg-preview.png" alt="Step 1">
       </div>
-      <h3>We Meet</h3>
+      <h3 class="step-title">We Meet</h3>
       <p>Our journey begins with a meeting where we dive into your ideas and preferences. This is an exciting step as we take the time to understand your vision, ensuring every detail aligns with your personality and lifestyle.</p>
     </div>
-    <div class="step">
+    <div class="step col-md-4">
       <div class="icon-container">
         <img src="img/render-1/10214741-removebg-preview.png" alt="Step 2">
       </div>
-      <h3>Design Thinking</h3>
+      <h3 class="step-title">Design Thinking</h3>
       <p>With your vision in mind, our sharp and dedicated designers craft a custom design tailored to your preferences. Using design thinking, we ensure the plan perfectly complements your choices, creating a blueprint for your dream space.</p>
     </div>
-    <div class="step">
+    <div class="step col-md-4">
       <div class="icon-container">
         <img src="img/render-1/15423038-removebg-preview.png" alt="Step 3">
       </div>
-      <h3>We Meet Again – The Design & Quotation</h3>
+      <h3 class="step-title">The Design</h3>
       <p>In our second meeting, we present the design and a detailed quotation. This is your chance to explore options and finalize the plan with confidence. With your approval, we solidify the design and prepare to bring it to life.</p>
     </div>
-    <div class="step">
+    <div class="step col-md-4">
       <div class="icon-container">
         <img src="img/render-1/1313228-removebg-preview.png" alt="Step 4">
       </div>
-      <h3>The Execution</h3>
+      <h3 class="step-title">The Execution</h3>
       <p>Our skilled team takes over, transforming your vision into reality with precision and care. During this time, you can sit back, relax, and even start planning your housewarming party!</p>
     </div>
-    <div class="step">
+    <div class="step col-md-4">
       <div class="icon-container">
         <img src="img/render-1/2114192-removebg-preview.png" alt="Step 5">
       </div>
-      <h3>The Final Reveal</h3>
+      <h3 class="step-title">The Final Reveal</h3>
       <p>The most thrilling moment arrives: seeing your dream home come to life. It’s a celebration of all your hopes and ideas now realized—a fresh start to a beautiful journey in your new space.</p>
     </div>
   </div>
+</div>
+</div>
 </div>
 
 </div>
@@ -506,17 +513,17 @@
 <style>
   .workflow {
  text-align: center;
- display: flex;
+ /* display: flex;
  justify-content: center;
  align-items: center;
- flex-direction: column;
+ flex-direction: column; */
 }
 
 .steps {
- display: flex;
- justify-content: space-between; /* Spread steps evenly */
+ /* display: flex;
+ justify-content: space-between; 
  align-items: center;
- flex-wrap: wrap;
+ flex-wrap: wrap; */
  gap: 20px;
  padding-left: 0;
 }
@@ -525,11 +532,18 @@
  display: flex;
  flex-direction: column;
  align-items: center;
- width: 18%; /* Adjust width to fit all 5 in one row */
- min-width: 150px; /* Ensure minimum width for smaller screens */
+ /* width: 18%;  */
+ /* min-width: 150px; */
+ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),-2px -2px 4px rgba(0, 0, 0, 0.1);
  transition: transform 0.3s ease;
+ padding: 0.5rem;
 }
-
+.step .step-title {
+  color: #d0a149;
+}
+.step p{
+  height: 200px;
+}
 .step:hover {
  transform: scale(1.1);
 }
