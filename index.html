@@ -466,42 +466,69 @@
 
 <div class="workflow text-center" style="background-color: #FAF7F0;">
   <div class="steps">
-    <div class="step">
+    <div class="container">
+
+   <div class="row">
+
+  
+    <div class="col-md-4">
+      <div class="step">
+
+      
       <div class="icon-container">
         <img src="img/render-1/2621711-removebg-preview.png" alt="Step 1">
       </div>
-      <h3>We Meet</h3>
+      <h3 class="step-title">We Meet</h3>
       <p>Our journey begins with a meeting where we dive into your ideas and preferences. This is an exciting step as we take the time to understand your vision, ensuring every detail aligns with your personality and lifestyle.</p>
     </div>
-    <div class="step">
+  </div>
+    <div class="col-md-4">
+      <div class="step">
+
+      
       <div class="icon-container">
         <img src="img/render-1/10214741-removebg-preview.png" alt="Step 2">
       </div>
-      <h3>Design Thinking</h3>
+      <h3 class="step-title">Design Thinking</h3>
       <p>With your vision in mind, our sharp and dedicated designers craft a custom design tailored to your preferences. Using design thinking, we ensure the plan perfectly complements your choices, creating a blueprint for your dream space.</p>
     </div>
-    <div class="step">
+  </div>
+    <div class="col-md-4">
+      <div class="step">
+
+      
       <div class="icon-container">
         <img src="img/render-1/15423038-removebg-preview.png" alt="Step 3">
       </div>
-      <h3>We Meet Again – The Design & Quotation</h3>
+      <h3 class="step-title">The Design</h3>
       <p>In our second meeting, we present the design and a detailed quotation. This is your chance to explore options and finalize the plan with confidence. With your approval, we solidify the design and prepare to bring it to life.</p>
     </div>
+  </div>
+    <div class="col-md-4">
     <div class="step">
+
+  
       <div class="icon-container">
         <img src="img/render-1/1313228-removebg-preview.png" alt="Step 4">
       </div>
-      <h3>The Execution</h3>
+      <h3 class="step-title">The Execution</h3>
       <p>Our skilled team takes over, transforming your vision into reality with precision and care. During this time, you can sit back, relax, and even start planning your housewarming party!</p>
     </div>
-    <div class="step">
+  </div>
+    <div class="col-md-4">
+      <div class="step">
+
+      
       <div class="icon-container">
         <img src="img/render-1/2114192-removebg-preview.png" alt="Step 5">
       </div>
-      <h3>The Final Reveal</h3>
+      <h3 class="step-title">The Final Reveal</h3>
       <p>The most thrilling moment arrives: seeing your dream home come to life. It’s a celebration of all your hopes and ideas now realized—a fresh start to a beautiful journey in your new space.</p>
     </div>
   </div>
+  </div>
+</div>
+</div>
 </div>
 
 </div>
@@ -509,17 +536,17 @@
 <style>
   .workflow {
  text-align: center;
- display: flex;
+ /* display: flex;
  justify-content: center;
  align-items: center;
- flex-direction: column;
+ flex-direction: column; */
 }
 
 .steps {
- display: flex;
- justify-content: space-between; /* Spread steps evenly */
+ /* display: flex;
+ justify-content: space-between; 
  align-items: center;
- flex-wrap: wrap;
+ flex-wrap: wrap; */
  gap: 20px;
  padding-left: 0;
 }
@@ -528,13 +555,23 @@
  display: flex;
  flex-direction: column;
  align-items: center;
- width: 18%; /* Adjust width to fit all 5 in one row */
- min-width: 150px; /* Ensure minimum width for smaller screens */
+ /* width: 18%;  */
+ /* min-width: 150px; */
+ background: linear-gradient(90deg, #d0a149, #829271);
+ box-shadow: 2px 2px 4px rgba(0, 0, 0, 2),-2px -2px 4px rgba(0, 0, 0, 0.1);
  transition: transform 0.3s ease;
+ padding: 0.5rem;
+ margin-bottom: 1rem;
 }
-
+.step .step-title {
+  color: white;
+}
+.step p{
+  height: 180px;
+  color: white !important;
+}
 .step:hover {
- transform: scale(1.1);
+ transform: scale(1.02);
 }
 
 .icon-container {
@@ -560,7 +597,11 @@
  margin-top: 10px;
  text-align: center;
 }
-
+@media(max-width:992px){
+  .step p{
+  height: auto;
+}
+}
 @media (max-width: 768px) {
  .steps {
    flex-direction: column;
@@ -1244,6 +1285,22 @@ margin-top: 1rem;
 
 
     <style>
+       .testi-carousel.owl-carousel .owl-dots{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+  }
+  .testi-carousel.owl-carousel .owl-dots .owl-dot{
+    margin: 0 5px;
+    width: 10px;
+    height:15px;
+    background-color: white;
+  }
+  .testi-carousel.owl-carousel .owl-dots .owl-dot.active{
+    background-color: #d0a149;
+
+  }
   .testi-img{
     /* width: 100px; */
     /* height: 100px; */
@@ -1564,51 +1621,107 @@ background-color: #e6b52e;
 
 
 <!-- Team Section -->
-<div id="team" class="text-center"  >
-  <div class="overlay" style="background-color:  #DFD3C3"  >
-    <div class="container" >
-      <div class="section-title text-center center">
-        <h2 style="color: #000;">Our Team</h2>
-        <hr style="color: #d0a149;">
-        <p style="color: #666;">Designing Dreams, Building Together</p>
+<style>
+  #team {
+    background-color: #000;
+    /* color: #fff; */
+    padding: 50px 0;
+    background: unset;
+  }
+
+  .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .team-card {
+    /* width: 200px; */
+    background:linear-gradient(to bottom, #d0a149, #829271);
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
+     }
+     .team-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 30px solid #829271;
+    border-radius: 50px;
+    z-index: 4;
+  }
+  .team-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transform: unset;
+  }
+
+  .team-card h3 {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+  }
+
+  .team-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  .section-title h2{
+    color: #d0a149 !important;
+  }
+  .section-title p{
+    color: #000 !important;
+  }
+    </style>
+
+<div id="team" class="text-center">
+  <div class="container">
+    
+
+ 
+    <div class="section-title text-center">
+      <h2 >Our Team</h2>
+      <hr style="border-color: #d0a149;">
+      <p >Designing Dreams, Building Together</p>
+    </div>
+
+    <div class="row team-container">
+      <div class="col-md-2 team-card">
+        <img src="img/team/team-8.png" alt="Mahesh">
+        <h3>Mahesh</h3>
+        <p>Director</p>
       </div>
-      <div id="row">
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/render-1/WhatsApp_Image_2025-01-06_at_6.31.59_PM-removebg-preview.png" alt="..." class="team-img">
-            <div class="caption">
-              <h3 style="color: #000;">Mahesh</h3>
-              <p style="color: #666;">Interior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/render-1/harshitha.png" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 style="color: #000;">Harshitha</h3>
-              <p style="color: #666;">Interior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 style="color: #000;">Jane Doe</h3>
-              <p style="color: #666;">Senior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 style="color: #000;">Karen Doe</h3>
-              <p style="color: #666;">Project Manager</p>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-2 team-card">
+        <img src="img/team/team-7.png" alt="Harshitha">
+        <h3>Harshitha</h3>
+        <p>Interior Designer</p>
+      </div>
+      <div class="col-md-2 team-card">
+        <img src="img/team/03.jpg" alt="Jane Doe">
+        <h3>Jane Doe</h3>
+        <p>Senior Designer</p>
+      </div>
+      <div class="col-md-2 team-card">
+        <img src="img/team/04.jpg" alt="Karen Doe">
+        <h3>Karen Doe</h3>
+        <p>Project Manager</p>
       </div>
     </div>
   </div>
-</div>
+  </div>
 
 
 
@@ -2267,10 +2380,10 @@ $(".testi-carousel").owlCarousel({
   autoplay: true,
   smartSpeed: 2000,
   center: false,
-  dots: false,
+  dots: true,
   loop: true,
   margin: 25,
-  nav : true,
+  nav : false,
   navText : [
       '<i class="fa fa-angle-right"></i>',
       '<i class="fa fa-angle-left"></i>'
