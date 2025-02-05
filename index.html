@@ -166,6 +166,7 @@
 </script>
 
 <style>
+
   .navbar-header{
     /* background-color: rgba(255, 255, 255, 0.628); */
   }
@@ -202,15 +203,19 @@
     color: white;  /* Change the text color as needed */
     z-index: 10;   /* Ensures the heading appears above the video */
     letter-spacing: 2;
+    width: 100%;
   }
 
   /* Styling for the heading */
   .heading-text {
-    font-size: 2.9rem;  /* Desktop font size */
-    font-weight: bold;
-     color: #d0a149 ;
+    font-size: 4rem;  /* Desktop font size */
+    font-weight: 900;
+    background:linear-gradient(to bottom, #d0a149, #829271);
+     color: text;
     letter-spacing: 2px;
     line-height: 1.5;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
 }
 
 /* Mobile view adjustments */
@@ -1699,6 +1704,11 @@ background-color: #e6b52e;
   .section-title p{
     color: #000 !important;
   }
+  @media(max-width:992px){
+    .team-container {
+      flex-direction: column;
+    }
+  }
     </style>
 
 <div id="team" class="text-center">
@@ -1713,22 +1723,22 @@ background-color: #e6b52e;
     </div>
 
     <div class="row team-container">
-      <div class="col-md-2 team-card">
+      <div class="col-md-2 col-12 col-sm-6 team-card">
         <img src="img/team/team-8.png" alt="Mahesh">
         <h3>Mahesh</h3>
         <p>Director</p>
       </div>
-      <div class="col-md-2 team-card">
+      <div class="col-md-2 col-12 col-sm-6 team-card">
         <img src="img/team/team-7.png" alt="Harshitha">
         <h3>Harshitha</h3>
         <p>Interior Designer</p>
       </div>
-      <div class="col-md-2 team-card">
+      <div class="col-md-2 col-12 col-sm-6 team-card">
         <img src="img/team/03.jpg" alt="Jane Doe">
         <h3>Jane Doe</h3>
         <p>Senior Designer</p>
       </div>
-      <div class="col-md-2 team-card">
+      <div class="col-md-2 col-12 col-sm-6 team-card">
         <img src="img/team/04.jpg" alt="Karen Doe">
         <h3>Karen Doe</h3>
         <p>Project Manager</p>
