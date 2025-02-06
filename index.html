@@ -1030,7 +1030,7 @@ margin-top: 1rem;
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/com-3.jpg" title="Studio a interior design" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Bed Room</h4>
+                <h4>COMMERCIAL</h4>
               </div>
               <img src="img/com-3.jpg" class="img-responsive" alt="Studio a interior design"> 
             </a> </div>
@@ -2029,7 +2029,7 @@ border-top: none;
       <hr>
       <p>Reach out to us for personalized assistance and expert solutions</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <h3>Contact Info</h3>
       <a href="https://maps.app.goo.gl/o9dFY8AWXGC8WuRM8" target="_blank">
       <div class="contact-item"> <span>Address</span>
@@ -2045,25 +2045,25 @@ border-top: none;
         <p> +91 6300354834</p>
       </div></a>
     </div>
-    <div class="col-md-8 form-card">
-      <h3>Leave us a message</h3>
+    <div class="col-md-6 form-card">
+      <h3>Get In Touch</h3>
       <form method="post" action="studio-a-interior-design-email.php">  
         <div class="mb-5">
-          <label for="name" class="form-label">Full Name</label>
+          <!-- <label for="name" class="form-label">Full Name</label> -->
           <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
         </div>
         <div class="mb-5">
-          <label for="number" class="form-label">Number</label>
+          <!-- <label for="number" class="form-label">Number</label> -->
           <input type="tel" pattern="^\d{10}$" id="number" name="number" class="form-control" placeholder="Enter your number" required>
           <small>Must be exactly 10 digits</small>
         </div>
         <div class="mb-5">
-          <label for="email" class="form-label">Email</label>
+          <!-- <label for="email" class="form-label">Email</label> -->
           <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
         </div>
         <div class="mb-5">
-          <label for="message" class="form-label">Message</label>
-          <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your message" required></textarea>
+          <!-- <label for="message" class="form-label">Message</label> -->
+          <textarea id="message" name="message" class="form-control" rows="3" placeholder="Your message" required></textarea>
         </div>
         <button type="submit">Submit</button>
       </form>
@@ -2086,7 +2086,7 @@ border-top: none;
  /* Header Section */
  .contact-header {
    background: url('your-banner-image.jpg') no-repeat center center/cover;
-   height: 250px;
+   height: 200px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -2119,40 +2119,45 @@ border-top: none;
  }
 
  .form-card, .info-card {
-   background: #fff;
+   background:#d0a149;
+   background: linear-gradient(to bottom, #d0a149, #829271);
    border-radius: 8px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   padding: 30px;
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 2);
+   padding: 10px;
  }
 
- .form-card h2 {
-   font-size: 1.8rem;
-   margin-bottom: 30px;
-   color: #d0a149;
+ .form-card h3 {
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+   margin: 0 !important;
+   color: white !important;
    
  }
 
  .form-card label {
    font-weight: bold;
-   font-size: 20px;
-   color: #000;
+   font-size: 15px;
+   color: white;
  }
 
  .form-card input, .form-card textarea {
    border: 1px solid #ced4da;
-   border-radius: 5px;
+   border-radius: 10px !important;
    padding: 10px;
+   margin-bottom: 1rem !important;
+   font-size: 15px !important;
+   box-shadow:inset 4px 4px 8px rgba(0, 0, 0, 0.2),inset -4px -4px 8px rgba(0, 0, 0, 0.2) !important;
  }
 
  .form-card button {
-   background-color: #d0a149;
+   background-color: #1f1f1f;
    color: #fff;
    border: none;
    border-radius: 5px;
    padding: 12px 20px;
-   font-size: 1rem;
-   margin-top: 20px;
-   width: 100%;
+   font-size: 1.2rem;
+   margin-top: 10px;
+   width: fit-content;
  }
 
  .form-card button:hover {
