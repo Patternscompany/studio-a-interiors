@@ -91,52 +91,9 @@
     <img src="img/render-1/whatsapp.png" alt="WhatsApp">
   </a>
 </div>
-<style>
-  .fixed-icons {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  z-index: 9999;
-}
 
-.fixed-icons .icon {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  animation: float 3s infinite ease-in-out, pulse 2s infinite ease-in-out;
-}
 
-.fixed-icons .icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 
-/* Floating animation */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-/* Pulsing animation */
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-</style>
 
 <!--banner-->
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -806,6 +763,7 @@ font-weight: 900;
     height: 400px;
     width: 100%;
     object-fit: fill;
+    border-radius: 20px;
   }
   .projects-carousel.owl-carousel .owl-dots{
 display: flex;
@@ -1693,12 +1651,13 @@ background-color: #e6b52e;
     font-size: 18px;
     color: #000;
     margin: 0;
+    text-transform: uppercase;
   }
 
   .team-card p {
     font-size: 14px;
     color: #666;
-    margin: 5px 0 0;
+    margin: 2px 0 0;
   }
   .section-title h2{
     color: #d0a149 !important;
